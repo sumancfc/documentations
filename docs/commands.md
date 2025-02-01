@@ -2,18 +2,18 @@
 
 ## Terminate a running process
 
-### Check the running process and terminate
+Check the running process and terminate
 
-- Windows
+### Windows Commands
 
-```sh
+```text
 netstat -ano | findstr :port
 taskkill /PID <PID> /F
 ```
 
-- Linux/macOS
+### Linux/macOS Commands
 
-```sh
+```text
 lsof -i :port
 kill -9 <PID>
 ```
