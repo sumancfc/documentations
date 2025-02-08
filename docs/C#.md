@@ -88,6 +88,29 @@ This section describes the arithmetic operators in C#.
 | `++` | Increment | Increases the value of a variable by 1. | `x++` |
 | `--` | Decrement | Decreases the value of a variable by 1. | `x--` |
 
+### Strings
+
+Strings are used for storing text in C#. A string is a sequence of characters enclosed in double quotes.
+Methods that are available for strings include:
+`.Length`, `.ToUpper()`, `.ToLower()`, `.Trim()`, `.IndexOf()`, `.Substring()`, `.Replace()`, `.Split()`
+
+Concatenation is the process of combining two strings. In C#, you can concatenate strings using the `+` operator or the `string.Concat()` method.
+
+**Warning**: C# uses the + operator for both addition and concatenation.
+
+**Remember**: Numbers are added. Strings are concatenated.
+
+**String Interpolation** is the process of evaluating string literals containing one or more placeholders. Each placeholder is enclosed in curly braces `{}`.
+
+```csharp
+string firstName = "John";
+string lastName = "Doe";
+string name = $"My full name is: {firstName} {lastName}";
+Console.WriteLine(name);
+```
+
+`Note:` The dollar sign `$` is required when using the string interpolation method.  It signals to the compiler that the string should be interpolated.
+
 ### Escape Sequences
 
 Escape sequences are special character combinations that represent characters that cannot be directly typed or have special meaning within strings in C#. They begin with a backslash (`\`) followed by a character code.
@@ -114,3 +137,65 @@ Here's a table of common escape sequences in C#:
 * When you need to include characters that have special meaning in strings (like quotes or backslashes).
 * When you need to represent characters that are not easily typed (like tabs or newlines).
 * When working with Unicode characters.
+
+### Switch Statement
+
+Use `switch` statements to select one of many code blocks to be executed.
+
+```csharp
+switch (expression)
+{
+    case constant-expression:
+        statement(s);
+        break; // optional
+    case constant-expression:
+        statement(s);
+        break; // optional
+    // you can have any number of case statements
+    default:
+        statement(s);
+        break; // optional
+}
+```
+
+### Loops
+
+While loop: It loops through a block of code as long as a specified condition is `True`:
+
+```csharp
+while (condition)
+{
+    // code block to be executed
+}
+```
+Do-While loop: It loops through a block of code once, and then repeats the loop as long as a specified condition is `True`:
+
+```csharp
+do
+{
+    // code block to be executed
+}
+while (condition);
+```
+
+### For Loop
+
+```csharp
+for (initialization; condition; increment/decrement)
+{
+    // code block to be executed
+}
+```
+
+### For Each Loop
+
+It is used to loop through an array or collection.
+
+```csharp
+foreach (type variableName in arrayName)
+{
+    // code block to be executed
+}
+```
+
+### Arrays
