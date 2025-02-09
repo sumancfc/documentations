@@ -197,5 +197,3 @@ foreach (type variableName in arrayName)
     // code block to be executed
 }
 ```
-
-### Arrays

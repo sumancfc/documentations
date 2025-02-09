@@ -96,6 +96,9 @@ git remote add origin <repository-url>
 
 # Change remote URL
 git remote set-url origin <new-url>
+
+# Remove a remote repository
+git remote remove origin
 ```
 
 ### Pushing and Pulling
